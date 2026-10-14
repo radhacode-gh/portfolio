@@ -1,4 +1,5 @@
-```css
+
+
 :root {
     --cream: #fffaf5;
     --white: #ffffff;
@@ -10,8 +11,6 @@
     --muted: #8f7c77;
     --border: #eadbd4;
     --green: #dce9d9;
-    --yellow: #f8edce;
-    --lilac: #eae1f5;
 }
 
 * {
@@ -92,7 +91,7 @@ section {
 }
 
 
-/* HERO */
+/* HERO SECTION */
 
 .hero {
     min-height: 680px;
@@ -314,7 +313,7 @@ section {
 }
 
 
-/* COMMON SECTION STYLING */
+/* COMMON SECTIONS */
 
 .section {
     padding: 105px 9%;
@@ -388,27 +387,40 @@ section {
     background: var(--cream);
 }
 
+.education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
 .education-card {
     display: grid;
-    grid-template-columns: 65px 1fr 45px;
+    grid-template-columns: 58px minmax(0, 1fr) 120px;
     gap: 25px;
-    align-items: start;
+    align-items: center;
+    padding: 30px;
     background: white;
     border: 1px solid var(--border);
-    padding: 38px;
-    border-radius: 8px;
-    box-shadow: 0 15px 45px #38272508;
+    border-radius: 10px;
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.education-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 35px #38272512;
 }
 
 .education-icon {
+    width: 55px;
+    height: 55px;
     display: grid;
     place-items: center;
-    width: 58px;
-    height: 58px;
     border-radius: 50%;
     background: var(--pink-light);
     color: var(--rose-dark);
-    font-size: 25px;
+    font-family: "Playfair Display", serif;
+    font-size: 21px;
+    font-weight: 700;
 }
 
 .card-label {
@@ -420,7 +432,7 @@ section {
 
 .education-info h3 {
     font-family: "Playfair Display", serif;
-    font-size: 27px;
+    font-size: 25px;
     margin: 8px 0;
 }
 
@@ -432,12 +444,6 @@ section {
 .education-info p {
     font-size: 14px;
     color: var(--text);
-}
-
-.education-number {
-    color: #e4c7cd;
-    font-family: "Playfair Display", serif;
-    font-size: 28px;
 }
 
 .education-tags,
@@ -456,6 +462,54 @@ section {
     border-radius: 3px;
     background: var(--pink-light);
     color: var(--rose-dark);
+}
+
+.education-score {
+    text-align: center;
+    padding: 17px 10px;
+    border-radius: 8px;
+    background: var(--pink-light);
+    color: var(--rose-dark);
+}
+
+.education-score strong {
+    display: block;
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+}
+
+.education-score span {
+    display: block;
+    font-size: 10px;
+    margin-top: 4px;
+}
+
+.ongoing-score {
+    background: #eae1f5;
+    color: #6e548c;
+}
+
+.college-cgpa {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 18px;
+    padding: 12px 18px;
+    background: #e0eadb;
+    border-left: 4px solid #78966d;
+    border-radius: 6px;
+}
+
+.college-cgpa span {
+    color: var(--text);
+    font-size: 12px;
+}
+
+.college-cgpa strong {
+    color: #45683d;
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
 }
 
 
@@ -633,7 +687,7 @@ section {
     width: 6px;
     margin-right: 3px;
     border-radius: 50%;
-    background: #d76b83;
+    background: var(--rose);
 }
 
 .mini-content {
@@ -676,7 +730,7 @@ section {
     position: relative;
     overflow: hidden;
     padding: 90px 9%;
-    background: #382725;
+    background: var(--brown);
     color: white;
 }
 
@@ -824,7 +878,7 @@ footer p,
 }
 
 
-/* RESPONSIVE DESIGN */
+/* TABLET */
 
 @media (max-width: 1000px) {
     .navbar {
@@ -854,7 +908,14 @@ footer p,
     .contact-card {
         grid-template-columns: 1fr;
     }
+
+    .education-card {
+        gap: 18px;
+    }
 }
+
+
+/* MOBILE */
 
 @media (max-width: 700px) {
     .navbar {
@@ -889,6 +950,10 @@ footer p,
         justify-content: center;
     }
 
+    .hero-details {
+        gap: 20px;
+    }
+
     .hero-visual {
         margin-top: 20px;
     }
@@ -907,12 +972,29 @@ footer p,
     }
 
     .education-card {
-        grid-template-columns: 1fr;
-        padding: 25px;
+        grid-template-columns: 48px minmax(0, 1fr);
+        gap: 15px;
+        padding: 20px;
     }
 
-    .education-number {
-        display: none;
+    .education-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .education-info h3 {
+        font-size: 22px;
+    }
+
+    .education-score {
+        grid-column: 2;
+        justify-self: start;
+        min-width: 110px;
+    }
+
+    .college-cgpa {
+        gap: 10px;
+        padding: 10px 12px;
     }
 
     .skills-grid,
@@ -935,6 +1017,9 @@ footer p,
     }
 }
 
+
+/* ACCESSIBILITY */
+
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before,
@@ -943,5 +1028,4 @@ footer p,
         transition: none !important;
     }
 }
-```
 
