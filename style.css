@@ -1,8 +1,4 @@
 
-/* =========================
-   GLOBAL STYLES
-========================= */
-
 :root {
   --cream: #fffaf6;
   --cream-dark: #f8eee7;
@@ -44,16 +40,6 @@ a {
   color: inherit;
 }
 
-img {
-  max-width: 100%;
-  display: block;
-}
-
-button,
-a {
-  -webkit-tap-highlight-color: transparent;
-}
-
 .container {
   width: min(1120px, 90%);
   margin: 0 auto;
@@ -76,9 +62,7 @@ span {
   background: var(--rose-dark);
 }
 
-/* =========================
-   NAVIGATION
-========================= */
+/* Navigation */
 
 .header {
   width: 100%;
@@ -130,9 +114,7 @@ span {
   color: var(--rose-dark);
 }
 
-/* =========================
-   BUTTONS
-========================= */
+/* Buttons */
 
 .btn {
   display: inline-flex;
@@ -174,9 +156,7 @@ span {
   transform: translateY(-3px);
 }
 
-/* =========================
-   SECTION HEADINGS
-========================= */
+/* Section headings */
 
 .section-heading {
   text-align: center;
@@ -208,20 +188,14 @@ span {
   color: var(--muted);
 }
 
-/* =========================
-   HERO SECTION
-========================= */
+/* Hero */
 
 .hero {
   min-height: 650px;
   display: flex;
   align-items: center;
   background:
-    radial-gradient(
-      circle at 85% 20%,
-      rgba(242, 214, 208, 0.5),
-      transparent 28%
-    ),
+    radial-gradient(circle at 85% 20%, rgba(242, 214, 208, 0.5), transparent 28%),
     var(--cream);
 }
 
@@ -264,6 +238,8 @@ span {
   gap: 14px;
 }
 
+/* Social icons */
+
 .social-links {
   display: flex;
   align-items: center;
@@ -300,7 +276,7 @@ span {
   transform: translateY(-4px);
 }
 
-/* Hero illustration card */
+/* Hero card */
 
 .hero-card {
   min-height: 400px;
@@ -401,9 +377,7 @@ span {
   left: -30px;
 }
 
-/* =========================
-   ABOUT SECTION
-========================= */
+/* About */
 
 .about-section {
   background: var(--white);
@@ -449,9 +423,7 @@ span {
   margin-bottom: 0;
 }
 
-/* =========================
-   EDUCATION SECTION
-========================= */
+/* Education */
 
 .education-section {
   background: var(--cream);
@@ -553,9 +525,7 @@ span {
   font-size: 0.88rem;
 }
 
-/* =========================
-   SKILLS SECTION
-========================= */
+/* Skills */
 
 .skills-section {
   background: var(--white);
@@ -600,9 +570,7 @@ span {
   font-size: 0.87rem;
 }
 
-/* =========================
-   PROJECTS SECTION
-========================= */
+/* Projects */
 
 .projects-section {
   background: var(--cream);
@@ -721,9 +689,7 @@ span {
   font-size: 0.75rem;
 }
 
-/* =========================
-   CONTACT SECTION
-========================= */
+/* Contact */
 
 .contact-section {
   background: var(--white);
@@ -802,9 +768,7 @@ span {
   transform: translateY(-4px);
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* Footer */
 
 .footer {
   padding: 30px 0;
@@ -851,9 +815,7 @@ span {
   transform: translateY(-3px);
 }
 
-/* =========================
-   RESPONSIVE DESIGN
-========================= */
+/* Responsive design */
 
 @media (max-width: 950px) {
   .navbar {
@@ -1016,3 +978,4 @@ span {
     font-size: 0.84rem;
   }
 }
+
