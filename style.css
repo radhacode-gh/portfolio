@@ -1,3 +1,6 @@
+/* =========================================
+   RADHA GARG - PERSONAL PORTFOLIO
+========================================= */
 
 :root {
     --cream: #fffaf5;
@@ -15,6 +18,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -87,7 +93,7 @@ section {
     padding: 10px 17px;
 }
 
-/* HERO */
+/* HOME / HERO SECTION */
 
 .hero {
     min-height: 680px;
@@ -234,23 +240,25 @@ section {
     background: #86a982;
 }
 
-.profile-monogram {
+/* YOUR PHOTO INSIDE THE CIRCLE */
+
+.profile-photo {
     width: 170px;
     height: 170px;
     margin: 38px auto 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow: hidden;
     border-radius: 50%;
     background: var(--pink-light);
     border: 1px solid #efcbd4;
-    font-family: "Playfair Display", serif;
-    font-size: 65px;
-    color: var(--rose-dark);
 }
 
-.profile-monogram span {
-    color: var(--brown);
+.profile-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 35%;
+    border-radius: 50%;
 }
 
 .profile-card h2 {
@@ -268,6 +276,8 @@ section {
     background: var(--border);
     margin: 20px 0 14px;
 }
+
+/* DECORATIONS */
 
 .decor {
     position: absolute;
@@ -503,10 +513,21 @@ section {
     box-shadow: 0 15px 35px #38272512;
 }
 
-.skill-pink { background: #f5dfe5; }
-.skill-yellow { background: #f6eac9; }
-.skill-green { background: #e0eadb; }
-.skill-lilac { background: #e9e0f1; }
+.skill-pink {
+    background: #f5dfe5;
+}
+
+.skill-yellow {
+    background: #f6eac9;
+}
+
+.skill-green {
+    background: #e0eadb;
+}
+
+.skill-lilac {
+    background: #e9e0f1;
+}
 
 .skill-number {
     font-size: 10px;
@@ -605,9 +626,21 @@ section {
     box-shadow: 5px 6px 10px #38272518;
 }
 
-.book-one { background: #bc6874; transform: rotate(-10deg); }
-.book-two { height: 120px; background: #8c9b79; transform: rotate(3deg); }
-.book-three { background: #dcae79; transform: rotate(11deg); }
+.book-one {
+    background: #bc6874;
+    transform: rotate(-10deg);
+}
+
+.book-two {
+    height: 120px;
+    background: #8c9b79;
+    transform: rotate(3deg);
+}
+
+.book-three {
+    background: #dcae79;
+    transform: rotate(11deg);
+}
 
 .portfolio-art {
     background: #e8e1ef;
@@ -672,7 +705,7 @@ section {
     margin-bottom: 4px;
 }
 
-/* CONTACT */
+/* CONTACT AND SOCIAL LOGOS */
 
 .contact-section {
     background: var(--cream);
@@ -691,7 +724,7 @@ section {
 .contact-item {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 16px;
     padding: 28px 22px;
     background: white;
     border: 1px solid var(--border);
@@ -705,22 +738,19 @@ section {
     box-shadow: 0 10px 25px #38272512;
 }
 
-/* LOGOS: NO CIRCULAR BACKGROUND */
-
 .contact-icon {
     display: grid;
     place-items: center;
-    flex: 0 0 48px;
-    width: 48px;
-    height: 48px;
+    flex: 0 0 36px;
+    width: 36px;
+    height: 36px;
     background: transparent;
-    border-radius: 0;
 }
 
 .contact-icon img {
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 28px;
+    height: 28px;
     object-fit: contain;
     transition: transform 0.25s ease;
 }
@@ -783,7 +813,7 @@ footer p,
     font-weight: 700;
 }
 
-/* RESPONSIVE DESIGN */
+/* TABLET */
 
 @media (max-width: 1000px) {
     .navbar {
@@ -814,6 +844,8 @@ footer p,
         grid-template-columns: 1fr;
     }
 }
+
+/* MOBILE */
 
 @media (max-width: 700px) {
     .navbar {
@@ -856,8 +888,13 @@ footer p,
         margin-top: 20px;
     }
 
+    .profile-card {
+        max-width: 335px;
+    }
+
     .floating-note {
         right: 0;
+        bottom: 25px;
     }
 
     .section {
@@ -912,10 +949,13 @@ footer p,
 /* ACCESSIBILITY */
 
 @media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
     *,
     *::before,
     *::after {
-        scroll-behavior: auto !important;
         transition: none !important;
     }
 }
