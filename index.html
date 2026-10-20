@@ -1,77 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Radha Garg's personal portfolio showcasing education, skills and projects.">
+    <title>Radha Garg | Portfolio</title>
 
-<section class="contact-section" id="contact">
-  <p class="section-label">GET IN TOUCH</p>
+    <link rel="stylesheet" href="style.css">
 
-  <h2>Let's start a <span>conversation.</span></h2>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-  <p class="contact-description">
-    Have an opportunity, an idea, or simply want to connect?
-    I'd love to hear from you.
-  </p>
+<header class="navbar">
+    <a href="#home" class="brand">RG<span>.</span></a>
 
-  <div class="contact-cards">
+    <nav aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="nav-contact">Let's Connect ↗</a>
+    </nav>
+</header>
 
-    <!-- Email -->
-    <a class="contact-card"
-       href="mailto:rggarg612@gmail.com">
-      <div class="contact-icon gmail-icon">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path fill="#EA4335"
-            d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5V21h-4V8.1l-6 4.5-6-4.5V21H2V5.5Z"/>
-          <path fill="#C5221F"
-            d="M2 5.5 12 13l2.2-1.65L4.3 4.1A2.5 2.5 0 0 0 2 5.5Z"/>
-          <path fill="#4285F4"
-            d="M18 8.1V21h4V5.5a2.5 2.5 0 0 0-1.2-2.14L18 5.5v2.6Z"/>
-        </svg>
-      </div>
+<main>
 
-      <div class="contact-info">
-        <span class="contact-type">EMAIL</span>
-        <strong>rggarg612@gmail.com</strong>
-      </div>
-    </a>
+    <!-- HOME -->
+    <section class="hero" id="home">
 
-    <!-- LinkedIn -->
-    <a class="contact-card"
-       href="https://www.linkedin.com/in/radha-garg-0366b3429/"
-       target="_blank"
-       rel="noopener noreferrer">
+        <div class="hero-content">
+            <span class="eyebrow">✦ STUDENT · LEARNER · FUTURE PROFESSIONAL</span>
 
-      <div class="contact-icon linkedin-icon">
-        <svg viewBox="0 0 24 24"
-             role="img"
-             aria-label="LinkedIn logo">
-          <path fill="#0A66C2"
-            d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52c0-.84-.69-1.52-1.55-1.52ZM8.05 18.45H5.1V9h2.95v9.45ZM6.58 7.71a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42Zm12 10.74h-2.94v-4.6c0-1.1-.02-2.52-1.54-2.52-1.54 0-1.78 1.2-1.78 2.44v4.68H9.38V9h2.82v1.29h.04c.39-.74 1.35-1.52 2.78-1.52 2.97 0 3.52 1.95 3.52 4.49v5.19Z"/>
-        </svg>
-      </div>
+            <h1>Hello, I'm<br><span>Radha Garg.</span></h1>
 
-      <div class="contact-info">
-        <span class="contact-type">LINKEDIN</span>
-        <strong>Connect on LinkedIn ↗</strong>
-      </div>
-    </a>
+            <p class="hero-description">
+                A passionate B.Tech student exploring technology,
+                building new skills, and turning ideas into reality.
+                Every day is another opportunity to learn something new.
+            </p>
 
-    <!-- GitHub -->
-    <a class="contact-card"
-       href="https://github.com/radhacode-gh"
-       target="_blank"
-       rel="noopener noreferrer">
+            <div class="hero-buttons">
+                <a href="#projects" class="button button-primary">Explore My Work ↗</a>
+                <a href="#about" class="button button-outline">Get to Know Me</a>
+            </div>
 
-      <div class="contact-icon github-icon">
-        <svg viewBox="0 0 24 24"
-             role="img"
-             aria-label="GitHub logo">
-          <path fill="#181717"
-            d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.55.1.76-.24.76-.53v-2.07c-3.1.67-3.76-1.32-3.76-1.32-.5-1.28-1.23-1.62-1.23-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15.99 1.7 2.6 1.21 3.23.92.1-.72.39-1.21.71-1.49-2.47-.28-5.07-1.23-5.07-5.48 0-1.21.43-2.2 1.15-2.98-.12-.28-.5-1.41.11-2.94 0 0 .94-.3 3.05 1.14a10.6 10.6 0 0 1 5.55 0c2.11-1.44 3.04-1.14 3.04-1.14.61 1.53.23 2.66.12 2.94.71.78 1.14 1.77 1.14 2.98 0 4.26-2.6 5.2-5.08 5.47.4.35.76 1.02.76 2.06V22c0 .29.2.63.77.52A11.1 11.1 0 0 0 12 .9Z"/>
-        </svg>
-      </div>
+            <div class="hero-details">
+                <div>
+                    <strong>B.Tech</strong>
+                    <span>Undergraduate</span>
+                </div>
+                <div>
+                    <strong>GLBITM</strong>
+                    <span>Institution</span>
+                </div>
+                <div>
+                    <strong>Always</strong>
+                    <span>Learning &amp; Growing</span>
+                </div>
+            </div>
+        </div>
 
-      <div class="contact-info">
-        <span class="contact-type">GITHUB</span>
-        <strong>Explore My GitHub ↗</strong>
-      </div>
-    </a>
+        <div class="hero-visual">
+            <div class="decor decor-one"></div>
+            <div class="decor decor-two"></div>
 
-  </div>
-</section>
+            <div class="profile-card">
+                <div class="profile-top">
+                    <span>MY JOURNEY</span>
+                    <span class="status-dot"></span>
+                </div>
+
+                <!-- YOUR PROFILE PHOTO -->
+                <div class="profile-photo">
+                    <img src="radha-profile.jpeg" alt="Radha Garg">
+                </div>
+
+                <h2>Radha Garg</h2>
+                <p>Curious mind. Creative spirit.</p>
+
+                <div class="profile-line"></div>
+
+                <div class="profile-bottom">
+                    <span>LEARN</span>
+                    <span>BUILD</span>
+                    <span>GROW</span>
+                </div>
+            </div>
+
+            <div class="floating-note">
+                <span>✦</span> Growing every day
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about-section" id="about">
+
+        <div class="section-heading">
+            <span class="eyebrow">A LITTLE ABOUT ME</span>
+            <h2>More than a <span>student.</span></h2>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-label">
+                <span class="big-number">01</span>
+                <h3>My Story</h3>
+            </div>
+
+            <div class="about-text">
+                <p>
+                    Hi! I'm Radha Garg, a B.Tech student at GLBITM.
+                    I believe that learning is a continuous journey and
+                    every small step contributes to something bigger.
+                </p>
+
+                <p>
+                    I'm interested in developing my technical knowledge,
+                    exploring programming, and working on projects that
+                    help me apply what I learn. My goal is to keep improving,
+                    stay curious, and build a strong foundation for my future career.
+                </p>
+
+                <a href="#education" class="text-link">Discover my journey →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section education-section" id="education">
+
+        <div class="section-heading">
+            <span class="eyebrow">MY ACADEMIC JOURNEY</span>
+            <h2>Education &amp; <span>Achievements.</span></h2>
+            <p>Every milestone has been a step towards learning, growing, and achieving more.</p>
+        </div>
+
+        <div class="education-list">
+
+            <article class="education-card">
+                <div class="education-icon">01</div>
+
+                <div class="education-info">
+                    <span class="card-label">SECONDARY EDUCATION</span>
+                    <h3>Class 10th</h3>
+                    <h4>DRSS Modern Public School</h4>
+                    <p>Successfully completed Class 10 with an excellent academic score.</p>
+
+                    <div class="education-tags">
+                        <span>Class 10</span>
+                        <span>Academic Excellence</span>
+                    </div>
+                </div>
+
+                <div class="education-score">
+                    <strong>95%</strong>
+                    <span>Percentage</span>
+                </div>
+            </article>
+
+            <article class="education-card">
+                <div class="education-icon">02</div>
+
+                <div class="education-info">
+                    <span class="card-label">SENIOR SECONDARY EDUCATION</span>
+                    <h3>Class 12th</h3>
+                    <h4>Arcadian Public School</h4>
+                    <p>Completed senior secondary education with a strong academic foundation.</p>
+
+                    <div class="education-tags">
+                        <span>Class 12</span>
+                        <span>Senior Secondary</span>
+                    </div>
+                </div>
+
+                <div class="education-score">
+                    <strong>86.4%</strong>
+                    <span>Percentage</span>
+                </div>
+            </article>
+
+            <article class="education-card">
+                <div class="education-icon">03</div>
+
+                <div class="education-info">
+                    <span class="card-label">UNDERGRADUATE DEGREE</span>
+                    <h3>Bachelor of Technology (B.Tech)</h3>
+                    <h4>GL Bajaj Institute of Technology and Management</h4>
+
+                    <p>
+                        Currently pursuing B.Tech, building knowledge in
+                        technology, programming, web development, and problem-solving.
+                    </p>
+
+                    <div class="education-tags">
+                        <span>B.Tech</span>
+                        <span>Technology</span>
+                        <span>Skill Development</span>
+                    </div>
+                </div>
+
+                <div class="education-score">
+                    <strong>8.225</strong>
+                    <span>First-Year CGPA</span>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section skills-section" id="skills">
+
+        <div class="section-heading">
+            <span class="eyebrow">WHAT I'M LEARNING</span>
+            <h2>Skills in <span>progress.</span></h2>
+            <p>Building my knowledge one concept at a time.</p>
+        </div>
+
+        <div class="skills-grid">
+
+            <article class="skill-card skill-pink">
+                <span class="skill-number">01</span>
+                <div class="skill-icon">&lt;/&gt;</div>
+                <h3>HTML</h3>
+                <p>Structuring meaningful web pages.</p>
+                <span class="skill-status">Web Development</span>
+            </article>
+
+            <article class="skill-card skill-yellow">
+                <span class="skill-number">02</span>
+                <div class="skill-icon">{ }</div>
+                <h3>CSS</h3>
+                <p>Styling layouts and creating attractive designs.</p>
+                <span class="skill-status">Web Development</span>
+            </article>
+
+            <article class="skill-card skill-green">
+                <span class="skill-number">03</span>
+                <div class="skill-icon">C++</div>
+                <h3>Programming</h3>
+                <p>Developing logical thinking and coding skills.</p>
+                <span class="skill-status">Learning &amp; Practice</span>
+            </article>
+
+            <article class="skill-card skill-lilac">
+                <span class="skill-number">04</span>
+                <div class="skill-icon">✳</div>
+                <h3>Problem Solving</h3>
+                <p>Learning to approach challenges step by step.</p>
+                <span class="skill-status">Continuous Growth</span>
+            </article>
+
+        </div>
+
+        <p class="skills-note">Update these skills as you gain more experience.</p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section projects-section" id="projects">
+
+        <div class="section-heading">
+            <span class="eyebrow">MY WORK</span>
+            <h2>Ideas into <span>projects.</span></h2>
+            <p>Explore my web development projects and the code behind them.</p>
+        </div>
+
+        <div class="projects-grid">
+
+            <article class="project-card">
+                <div class="project-top">
+                    <span>PROJECT 01</span>
+                    <span class="project-symbol">↗</span>
+                </div>
+
+                <div class="project-art bookstore-art" aria-hidden="true">
+                    <div class="book book-one"></div>
+                    <div class="book book-two"></div>
+                    <div class="book book-three"></div>
+                </div>
+
+                <span class="project-category">WEB DEVELOPMENT</span>
+                <h3>Online Book Store</h3>
+                <p>A bookstore website featuring book listings, a catalogue, and shopping-related pages.</p>
+
+                <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                </div>
+
+                <a href="https://github.com/radhacode-gh/bookstore"
+                   class="project-link" target="_blank" rel="noopener noreferrer">
+                    View Source Code on GitHub ↗
+                </a>
+            </article>
+
+            <article class="project-card">
+                <div class="project-top">
+                    <span>PROJECT 02</span>
+                    <span class="project-symbol">↗</span>
+                </div>
+
+                <div class="project-art portfolio-art" aria-hidden="true">
+                    <div class="mini-window">
+                        <span></span><span></span><span></span>
+                        <div class="mini-content"></div>
+                    </div>
+                </div>
+
+                <span class="project-category">PERSONAL BRANDING</span>
+                <h3>Personal Portfolio</h3>
+                <p>A personal website showcasing my background, education, skills, and projects.</p>
+
+                <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <a href="https://github.com/radhacode-gh/portfolio"
+                   class="project-link" target="_blank" rel="noopener noreferrer">
+                    View Source Code on GitHub ↗
+                </a>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact">
+
+        <div class="section-heading">
+            <span class="eyebrow">GET IN TOUCH</span>
+            <h2>Let's start a <span>conversation.</span></h2>
+            <p>Have an opportunity, an idea, or simply want to connect? I'd love to hear from you.</p>
+        </div>
+
+        <div class="contact-card">
+
+            <div class="contact-item">
+                <span class="contact-icon">
+                    <img src="https://cdn.simpleicons.org/gmail/EA4335"
+                         alt="Gmail logo" width="28" height="28">
+                </span>
+
+                <div>
+                    <span class="contact-label">EMAIL</span>
+                    <a href="mailto:rggarg612@gmail.com">rggarg612@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-icon">
+                    <img src="https://cdn.simpleicons.org/linkedin/0A66C2"
+                         alt="LinkedIn logo" width="28" height="28">
+                </span>
+
+                <div>
+                    <span class="contact-label">LINKEDIN</span>
+                    <a href="https://www.linkedin.com/in/radha-garg-0366b3429/"
+                       target="_blank" rel="noopener noreferrer">
+                        Connect on LinkedIn ↗
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-icon">
+                    <img src="https://cdn.simpleicons.org/github/181717"
+                         alt="GitHub logo" width="28" height="28">
+                </span>
+
+                <div>
+                    <span class="contact-label">GITHUB</span>
+                    <a href="https://github.com/radhacode-gh"
+                       target="_blank" rel="noopener noreferrer">
+                        Explore My GitHub ↗
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <a href="#home" class="footer-brand">RG.</a>
+    <p>Designed with care by Radha Garg.</p>
+    <a href="#home" class="back-to-top">Back to top ↑</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
